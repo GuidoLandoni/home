@@ -1,0 +1,32 @@
+<div class="bg-taskly-background flex flex-col h-screen">
+    <nav class="flex items-center justify-between bg-taskly-woodsmoke p-4 flex-col h-28 sm:flex-row sm:h-12">
+        <div class="flex items-center">
+          <img src="{{'assets/logo-2.png'}}" class="h-12 mr-2">
+          <h1 class="text-3xl text-taskly-vermilion">Taskly</h1>
+        </div>
+      
+        <div class="flex items-center mt-2 sm:mt-0">
+          <button class="bg-taskly-vermilion hover:bg-taskly-vermilion-dark font-bold mr-2" routerLink="/log-in">
+            Iniciar Sesión
+          </button>
+          <button class="btn-outline text-taskly-vermilion hover:bg-taskly-vermilion hover:text-white font-bold" routerLink="/sign-up">
+            Registrarse
+          </button>
+        </div>
+    </nav>
+    
+    <div class="container mx-auto mt-16 sm:mt-8 flex items-center sm:h-screen">
+      <div class="md:w-1/2 flex flex-col justify-center">
+        <h2 class="text-3xl mb-4">¡Ordena tus tareas con Taskly!</h2>
+        <p class="text-lg">Con Taskly, puedes organizar tus tareas de manera fácil y eficiente.<br> ¡Regístrate ahora y comienza a ser más productivo!</p>
+        <button class="bg-taskly-vermilion hover:bg-taskly-vermilion-light font-bold mt-5" routerLink="/sign-up">
+          ¡Empezá ya!
+        </button>
+      </div>
+    
+      <div class="hidden w-1/2 text-right sm:flex justify-center">
+        <img src="{{'assets/logo.png'}}" class="h-64">
+      </div>
+    </div>
+</div>
+<router-outlet/>
